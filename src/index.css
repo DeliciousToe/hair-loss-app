@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 9 9 11;
+    /* #09090b - zinc-950 (using rgb values for opacity usage if needed, but hex is fine in v3 usually, keeping hex for simplicity in custom props) */
+    --background-hex: #09090b;
+    --foreground: #fafafa;
+    --card: #18181b;
+    --card-foreground: #fafafa;
+    --primary: #2563eb;
+    --primary-foreground: #ffffff;
+    --muted: #27272a;
+    --muted-foreground: #a1a1aa;
+    --border: #27272a;
+  }
+
+  body {
+    @apply bg-zinc-950 text-zinc-50 antialiased min-h-screen font-sans;
+  }
+}
